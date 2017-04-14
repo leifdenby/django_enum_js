@@ -6,6 +6,7 @@ class EnumWrapper:
 
     def register_enum(self, enum_class):
         self.registered_enums[enum_class.__name__] = enum_class
+        return enum_class
 
     def _enum_to_dict(self, enum_class):
         return dict([(k,v) for k,v in enum_class.__dict__.items() if not k[:2] == '__'])

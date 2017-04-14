@@ -1,0 +1,2 @@
+include django_enum_js/templates/django_enum_js/enums_js.tpl
+
